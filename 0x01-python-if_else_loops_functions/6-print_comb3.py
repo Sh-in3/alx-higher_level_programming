@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-for a in range(0, 10):
-    for b in range((a+1), 10):
-        if (a != 8) or (b != 9):
-            print("{}{}, ".format(a, b), end="")
+# Author - Tolulope Fakunle
+
+for digit1 in range(0, 10):
+    for digit2 in range(digit1 + 1, 10):
+        if digit1 == 8 and digit2 == 9:
+            print("{}{}".format(digit1, digit2))
         else:
-            print("{}{}".format(a, b))
+            print("{}{}".format(digit1, digit2), end=", ")
